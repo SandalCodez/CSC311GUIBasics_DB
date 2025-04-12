@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.module03_basicgui_db_interface.SIgnIn_Controller">
+   <children>
+      <TextField fx:id="userField" layoutX="445.0" layoutY="146.0" prefHeight="25.0" prefWidth="142.0" />
+      <PasswordField fx:id="passField" layoutX="445.0" layoutY="256.0" prefHeight="25.0" prefWidth="142.0" />
+      <ImageView fitHeight="400.0" fitWidth="411.0">
+         <image>
+            <Image url="@images/alumni-association_circle-logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="483.0" layoutY="101.0" prefHeight="32.0" prefWidth="66.0" text="USER ">
+         <font>
+            <Font name="Stencil" size="22.0" />
+         </font></Label>
+      <Label layoutX="458.0" layoutY="212.0" prefHeight="32.0" prefWidth="117.0" text="PASSWORD">
+         <font>
+            <Font name="Stencil" size="22.0" />
+         </font></Label>
+      <Button fx:id="signInBtn" layoutX="445.0" layoutY="316.0" mnemonicParsing="false" onAction="#handleLogin" text="Log In" />
+      <Button fx:id="registerBtn1" layoutX="530.0" layoutY="316.0" mnemonicParsing="false" onAction="#handleRegister" text="Register" />
+      <Label fx:id="userAndPassLabel" layoutX="442.0" layoutY="360.0" prefHeight="17.0" prefWidth="176.0" text="User: admin Password: pass" />
+      <ToggleButton fx:id="darkModeBtn" layoutX="480.0" layoutY="33.0" mnemonicParsing="false" onAction="#handleDarkMode" prefHeight="37.0" prefWidth="72.0" text="DarkMode" />
+   </children>
+</AnchorPane>
